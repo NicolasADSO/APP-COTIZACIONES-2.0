@@ -119,6 +119,7 @@
   </style>
 </head>
 <body>
+  <!-- NAVBAR -->
   <div class="navbar">
     <h1>Simulador de Licitación</h1>
     <img src="assets/img/logo-sin-fondo.png" alt="Logo BlaaFlow">
@@ -171,6 +172,11 @@
         </table>
         <p class="total" id="total"></p>
         <div class="recomendacion" id="recomendacionFinal"></div>
+
+        <!-- ✅ Botón dentro del bloque correcto -->
+        <div style="text-align:center; margin-top:20px;">
+          <button id="btnPDF">Generar Acta PDF</button>
+        </div>
       </div>
     </div>
 
@@ -217,6 +223,12 @@
     </div>
   </div>
 
+  <!-- === LIBRERÍAS === -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- === ARCHIVOS JS === -->
   <script src="assets/js/simulador.js"></script>
+  <script src="assets/js/acta-licitacion-pdf.js"></script>
 </body>
 </html>

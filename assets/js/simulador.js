@@ -91,6 +91,14 @@ document.getElementById("formSimulador").addEventListener("submit", (e) => {
     mensaje = `✅ Está por debajo del presupuesto, se puede optimizar tiempo o aumentar recursos.`;
 
   document.getElementById("recomendacionFinal").textContent = mensaje;
+
+  // === NUEVO: BOTÓN PARA GENERAR ACTA PDF ===
+  const btnPDF = document.getElementById("btnPDF");
+  if (btnPDF) {
+    btnPDF.onclick = () => {
+      generarActaLicitacionPDF(proceso, cantidad, tiempo, presupuesto, resultados);
+    };
+  }
 });
 
 // === TABLA EDITABLE DE PRECIOS ===
